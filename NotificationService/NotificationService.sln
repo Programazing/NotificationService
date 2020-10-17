@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "Noti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "..\EmailService\EmailService.csproj", "{5627B6E3-A082-4789-9EE6-F68FF623FA8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationServiceTests", "..\NotificationServiceTests\NotificationServiceTests.csproj", "{09ABB5B3-CC63-474E-B336-D899EE01E50E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5627B6E3-A082-4789-9EE6-F68FF623FA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5627B6E3-A082-4789-9EE6-F68FF623FA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5627B6E3-A082-4789-9EE6-F68FF623FA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09ABB5B3-CC63-474E-B336-D899EE01E50E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09ABB5B3-CC63-474E-B336-D899EE01E50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09ABB5B3-CC63-474E-B336-D899EE01E50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09ABB5B3-CC63-474E-B336-D899EE01E50E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
