@@ -16,20 +16,22 @@ namespace NotificationServiceTests.IntegrationTests
         [Test]
         public async Task SendEmail_Returns_200_WhenGivenValidMessage()
         {
-            var request = new
-            {
-                Url = "/api/sendemail",
-                Body = new MessageDTO()
-                {
-                    To = "email@email.com",
-                    Subject = "Some Subject I made up",
-                    Content = "Oh look, content."
-                }
-            };
+            var request = new Request();
 
             var response = await TestClient.PostAsync(request.Url, ContentHelper.GetStringContent(request.Body));
 
             response.StatusCode.Should().Be(200);
+        }
+
+        [Test]
+        public async Task SendEmail_Returns400_WhenGivenMisformedEmailAddress()
+        {
+            var request = new Request();
+            request.Body.To = "email@email";
+
+            var response = await TestClient.PostAsync(request.Url, ContentHelper.GetStringContent(request.Body));
+
+            response.StatusCode.Should().Be(400);
         }
     }
 }

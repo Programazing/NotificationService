@@ -31,6 +31,8 @@ namespace NotificationService
 
             services.AddSingleton(emailConfig);
 
+            services.AddScoped<IEmailSender, EmailSender>();
+
             services.AddControllers();
         }
 
